@@ -2,7 +2,7 @@
 
 // originally written for a TUM security challenge by a THI student ;)
 
-if(isset($_GET["sqlite"])) {
+if(isset($_GET["sql"])) {
 	$db = new SQLite3("/var/www/html/db/flag.db");
 	$result = $db->query($_GET["sql"]);
 	while($row = $result->fetchArray())
